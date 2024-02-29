@@ -54,28 +54,42 @@
         class="d-flex container-fluid align-items-center justify-content-around"
       >
         <h1 class="logo"><a href="index.html">Logo</a></h1>
-        <nav id="navbar" class="navbar">
-          <ul class="d-flex align-items-end">
-            <li><a class="nav-link" href="#hero">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link" href="#team">Team</a></li>
-            <li class="dropdown">
-              <a href="#" class="nav-link"><span>Drop Down</span> </a>
-            </li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-            <li>
-              <a class="getstarted nav-link" href="#about">Get Started</a>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <nav class="navbar navbar-expand-md navbar-dark">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-collapse collapse" id="navbar">
+              <li><a href="#home" class="nav-link">home</a></li>
+              <li><a href="#about" class="nav-link">about</a></li>
+              <li><a href="#services" class="nav-link">services</a></li>
+              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li><a href="#team" class="nav-link">team</a></li>
+              <li><a href="" class="nav-link">Drop Down<i class="fa-solid fa-chevron-down"></i></a></li>
+              <div class="drop-down">
+                <ul>
+                  <li><a href="">Drop Down</a></li>
+                  <li><a href="">Drop Down</a></li>
+                  <li><a href="">Drop Down</a></li>
+                  <li><a href="">Drop Down</a></li>
+                </ul>
+              </div>
+              <li><a href="#contact" class="nav-link">contact</a></li>
+              <li><a href="" class="getstarted">Get Started</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- end of header -->
-      <!--Hero section start  -->
+    <!--Hero section start  -->
     <section id="hero" class="hero">
-      <div class="container col-xl-12 col-lg-10">
+      <div class="container col-xl-9 col-lg-9">
         <div class="d-flex justify-content-around align-items-center flex-wrap">
           <div class="col-xl-6 mr-">
             <h1 class="font-weight-bold">Better Solutions For Your Business</h1>
@@ -101,9 +115,9 @@
       </div>
       <!--Hero section end  -->
     </section>
-        <!-- Main  section start -->
+    <!-- Main  section start -->
     <main class="main" id="main">
-        <!--Client section start -->
+      <!--Client section start -->
       <section class="clients section-bg">
         <din class="container">
           <div
@@ -167,13 +181,13 @@
         </din>
         <!-- Client section end -->
       </section>
-        <!-- about  us section start -->
+      <!-- about  us section start -->
       <section id="about" class="mt-5">
         <div class="section-title text-center">
           <h1>ABOUT US</h1>
         </div>
         <div class="container col-xl-9 mt-5">
-          <div class="d-flex">
+          <div class="d-flex flex-wrap">
             <div class="pl-5 pr-5 col-xl-6">
               <p class="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -207,10 +221,10 @@
         </div>
         <!-- about  us sectrion end -->
       </section>
-        <!-- why us sectrion start -->
+      <!-- why us sectrion start -->
       <section>
-        <div class="container col-xl-12 section-bg">
-          <div class="d-flex justify-content-around flex-wrap-reverse ">
+        <div class="container pb-5 col-xl-12 section-bg">
+          <div class="d-flex justify-content-around flex-wrap-reverse">
             <div class="mt-5 pt-5 col-xl-6">
               <div class="pt-5 why-us-title">
                 <h2>
@@ -228,7 +242,6 @@
                 Duis aute irure dolor in reprehenderit
               </p>
               <div>
-  
                 <div class="col-xl-11 p-3 why-us-list">
                   <p>
                     <span class="mr-2 h5 text-lightblue"><b>01</b></span> Non
@@ -247,7 +260,6 @@
                     consectetur a erat nam at lectus urna duis?
                   </p>
                 </div>
-                
               </div>
             </div>
             <div class="mt-5 pt-5 col-xl-5">
@@ -335,10 +347,10 @@
             </div>
           </div>
         </div>
-      <!-- skills section end -->
+        <!-- skills section end -->
       </section>
       <!-- services section start -->
-      <section class="section-bg mt-5 pt-4 pb-5">
+      <section class="section-bg mt-5 pt-4 pb-5" id="services">
         <div class="container">
           <div class="services text-center mt-5">
             <h1 class=""><b>Services</b></h1>
@@ -402,7 +414,7 @@
             </div>
           </div>
         </div>
-      <!-- services section end -->
+        <!-- services section end -->
       </section>
       <!-- call to acction section strat -->
       <section class="cta-bg">
@@ -420,10 +432,10 @@
             <button class="cta-btn">Call to action</button>
           </div>
         </div>
-      <!-- call to acction section  end -->
+        <!-- call to acction section  end -->
       </section>
-        <!-- Portfolio section start -->
-      <section>
+      <!-- Portfolio section start -->
+      <section id="portfolio">
         <div class="Portfolio container mt-5">
           <h1>Portfolio</h1>
           <p class="text-center">
@@ -638,8 +650,8 @@
         </div>
         <!-- Portfolio section end -->
       </section>
-        <!-- team section start -->
-      <section class="container-fluid">
+      <!-- team section start -->
+      <section class="container-fluid" id="team">
         <div class="team mt-5 pt-5">
           <div class="container-fluid text-center mb-5 col-xl-8">
             <h1>team</h1>
@@ -767,7 +779,7 @@
         </div>
         <!-- team section end -->
       </section>
-        <!-- Pricing section end -->
+      <!-- Pricing section end -->
       <section class="">
         <div class="pricing">
           <h1>pricing</h1>
@@ -810,7 +822,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-12 mt-sm-5">
-            <div class="box m-2">
+            <div class="box-featured m-2">
               <h6><b>Business plan</b></h6>
               <h1><sup>$</sup>29</h1>
               <p>per month</p>
@@ -869,7 +881,7 @@
         <!-- Pricing section end -->
       </section>
       <!-- frequently asked question section start -->
-      <section class="FAQ">
+      <section class="FAQ pb-5">
         <div class="container col-xl-8 text-center">
           <h1>frequently asked questions</h1>
           <p>
@@ -927,7 +939,7 @@
         <!-- FAQ section end -->
       </section>
       <!-- contact section start -->
-      <section class="contact mt-5 pt-5">
+      <section class="contact mt-5 pt-5" id="contact">
         <div class="container col-xl-8 text-center">
           <h1>CONTACT</h1>
           <p>
@@ -936,7 +948,7 @@
             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
             fugiat sit in iste officiis commodi quidem hic quas.
           </p>
-          <div class=" d-flex justify-content-between flex-wrap ">
+          <div class="d-flex justify-content-between flex-wrap">
             <div class="contact-box mt-5 col-xl-5">
               <div class="d-flex contact-info">
                 <i class="fa-solid fa-location-dot contact-icon"></i>
@@ -1020,7 +1032,7 @@
             </div>
           </div>
         </div>
-      <!-- contact section end -->
+        <!-- contact section end -->
       </section>
       <!-- main section End -->
     </main>
@@ -1033,17 +1045,15 @@
             Tamen quem nulla quae legam multos aute sint culpa legam noster
             magna
           </p>
-          <div class="d-flex news-letter-input   m-auto">
+          <div class="d-flex news-letter-input m-auto">
             <input type="email" />
             <button class="btn-subscribe m-auto">Subscribe</button>
           </div>
         </div>
       </div>
-            <!-- news letter section end -->
-        <!-- footer start -->
-            <div
-        class="d-flex  flex-wrap footer-top col-xl-8 ml-auto  pt-5 container"  
-      >
+      <!-- news letter section end -->
+      <!-- footer start -->
+      <div class="d-flex flex-wrap footer-top col-xl-8 ml-auto pt-5 container">
         <div class="address col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
           <h6>Logo</h6>
           <div>
@@ -1067,23 +1077,39 @@
           <li><i class="fa-solid fa-chevron-right text-aqua"></i> Home</li>
           <li><i class="fa-solid fa-chevron-right text-aqua"></i> About us</li>
           <li><i class="fa-solid fa-chevron-right text-aqua"></i> Services</li>
-          <li><i class="fa-solid fa-chevron-right text-aqua"></i> Terms of services</li>
-          <li><i class="fa-solid fa-chevron-right text-aqua"></i> Privacy Policy</li>
+          <li>
+            <i class="fa-solid fa-chevron-right text-aqua"></i> Terms of
+            services
+          </li>
+          <li>
+            <i class="fa-solid fa-chevron-right text-aqua"></i> Privacy Policy
+          </li>
         </div>
-        <div class="footer-services col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-          <h6>useful links</h6>
+        <div
+          class="footer-services col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
+        >
+          <h6>Our services</h6>
           <ul>
             <li><i class="fa-solid fa-chevron-right text-aqua"></i> Home</li>
-            <li><i class="fa-solid fa-chevron-right text-aqua"></i> About us</li>
-            <li><i class="fa-solid fa-chevron-right text-aqua"></i> Services</li>
-            <li><i class="fa-solid fa-chevron-right text-aqua"></i> Terms of services</li>
-            <li><i class="fa-solid fa-chevron-right text-aqua"></i> Privacy Policy</li>
+            <li>
+              <i class="fa-solid fa-chevron-right text-aqua"></i> About us
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right text-aqua"></i> Services
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right text-aqua"></i> Terms of
+              services
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right text-aqua"></i> Privacy Policy
+            </li>
           </ul>
         </div>
         <div class="footer-media col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
           <h6>Our Social Networks</h6>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <div >
+          <div>
             <i class="fa-brands fa-instagram footer-media-icon"></i>
             <i class="fa-brands fa-twitter footer-media-icon"></i>
             <i class="fa-brands fa-facebook footer-media-icon"></i>
@@ -1103,7 +1129,7 @@
           </div>
         </div>
       </div>
-        <!-- footer end -->
+      <!-- footer end -->
     </footer>
   </body>
 </html>
