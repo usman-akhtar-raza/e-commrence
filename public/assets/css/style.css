@@ -717,6 +717,9 @@ ul {
   width: 600px;
   overflow: hidden;
 }
+@media(max-width:786px) {
+.news-letter-input{width: 100%;}
+}
 .news-letter-input input {
   border: 0px;
   width: inherit;
@@ -737,7 +740,6 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  /* position: relative; */
   color: #37517e;
 }
 .address {
@@ -793,4 +795,13 @@ ul {
 .credits a {
   transition: 0.3s;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.footer-top{
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center !important;
+
+} 
 }
