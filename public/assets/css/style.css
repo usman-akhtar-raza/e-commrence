@@ -464,7 +464,7 @@ ul {
   height: 400px;
   margin-top: -100px;
 }
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .img-1 {
     width: max-content;
     margin-top: 15px;
@@ -555,6 +555,13 @@ ul {
   align-items: center;
   /* padding-top: 12px; */
   border-radius: 50%;
+}
+@media (max-width: 375px) {
+  memver-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 /* priceing section */
 .pricing h1 {
